@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
+    
     background-color: rgb(211, 230, 255); 
     padding: 0%;
     margin: 0%;
@@ -79,8 +80,15 @@ li a{
     padding: 0.1%;
     
 }
+.logo{
 
-
+    height: 70px;
+    transition: height 2s;
+    
+}
+.logo:hover{
+   height: 150px;
+}
 .slider{
     width: 50%;
     display: block;
