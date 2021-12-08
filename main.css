@@ -79,7 +79,15 @@ li a{
     padding: 0.1%;
 
 }
+.logo{
 
+    height: 70px;
+    transition: height 2s;
+    
+}
+.logo:hover{
+   height: 150px;
+}
 .slider{
     width: 50%;
     display: block;
