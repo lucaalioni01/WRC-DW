@@ -1,55 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 body {
-  background-color: #d3e6ff;
+  background-color: #212529;
   padding: 0%;
   margin: 0%;
+  /* Grid */
+  /*  */
 }
 
-/* Grid */
-#pagina {
+body #pagina {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "indice"  "main" "footer";
 }
 
-.navIndice {
+body .navIndice {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: indice;
 }
 
-.navMain {
+body .navMain {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
-.navFooter {
+body .navFooter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
 }
 
-#todoVideos {
+body #todoVideos {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "carousel " "videos ";
 }
 
-.navCarouselSlide {
+body .navCarouselSlide {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: carousel;
 }
 
-.navVideos {
+body .navVideos {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: videos;
 }
 
-/*  */
-.indice {
+body #pagina {
+  background-color: #212529;
+}
+
+body .indice {
   margin: 0%;
   padding: 0.1%;
   display: -webkit-box;
@@ -65,23 +69,23 @@ body {
   font-size: 25px;
 }
 
-.indiceLi {
+body .indiceLi {
   margin-left: 1%;
 }
 
-li {
+body li {
   display: inline-block;
   font-family: 'Anton', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-li a {
+body li a {
   text-decoration: none;
   color: #f87d09;
 }
 
-.logo {
+body .logo {
   width: 120px;
   height: auto;
   border-radius: 12px;
@@ -89,17 +93,17 @@ li a {
   padding: 0.1%;
 }
 
-.logo {
+body .logo {
   height: 70px;
   -webkit-transition: height 2s;
   transition: height 2s;
 }
 
-.logo:hover {
+body .logo:hover {
   height: 150px;
 }
 
-.slider {
+body .slider {
   width: 50%;
   display: block;
   margin-left: auto;
@@ -107,7 +111,7 @@ li a {
   letter-spacing: 2px;
 }
 
-.imgNoticia {
+body .imgNoticia {
   width: 20%;
   height: auto;
   border-radius: 12px;
@@ -115,13 +119,13 @@ li a {
   padding: 0.1%;
 }
 
-.divImg {
+body .divImg {
   display: contents;
   width: auto;
   height: auto;
 }
 
-.noticias {
+body .noticias {
   border-style: solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,9 +134,11 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  border-radius: 12px;
+  color: white;
 }
 
-.noticias2 {
+body .noticias2 {
   border-style: solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,18 +147,20 @@ li a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  border-radius: 12px;
+  color: white;
 }
 
-.textoNoticia {
+body .textoNoticia {
   display: inline-block;
 }
 
-footer {
+body footer {
   width: 100%;
   height: 60px;
 }
 
-.videos {
+body .videos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,40 +173,49 @@ footer {
   margin: 0%;
 }
 
-.videos iframe {
+body .videos iframe {
   width: 50%;
 }
 
-dt, dd {
+body dt, body dd {
   color: grey;
 }
 
-.hamburguesa {
+body .hamburguesa {
   display: none;
 }
 
+body #tabla {
+  background-color: #212529;
+  color: white;
+}
+
+body body {
+  background-color: #212529;
+}
+
 @media (max-width: 650px) {
-  .divImg {
+  body .divImg {
     display: none;
   }
-  .textoNoticias {
+  body .textoNoticias {
     font-size: 12px;
   }
-  .navIndice {
+  body .navIndice {
     font-size: 12px;
   }
-  .indiceLi {
+  body .indiceLi {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 18px;
     letter-spacing: 3px;
   }
-  .logo {
+  body .logo {
     width: 90px;
     height: auto;
   }
-  .videos {
+  body .videos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,16 +225,16 @@ dt, dd {
             flex-direction: column;
     width: 100%;
   }
-  iframe {
+  body iframe {
     width: 100%;
   }
-  .navIndice {
+  body .navIndice {
     display: none;
   }
-  .hamburguesa {
+  body .hamburguesa {
     display: inline;
   }
-  .navbar-toggler-icon {
+  body .navbar-toggler-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
