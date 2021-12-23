@@ -1,212 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
     
-    background-color: rgb(211, 230, 255); 
-    padding: 0%;
-    margin: 0%;
-
-}
-/* Grid */
-#pagina{
-    display: grid;
-    grid-template-areas: 
-    "indice" 
-    "main"
-    "footer";
-  
-}
-
-.navIndice{
-    grid-area: indice;
-}
-
-.navMain{
-    grid-area: main;
-}
-
-.navFooter{
-    grid-area: footer;
-}
-
-#todoVideos{
-    display: grid;
-    grid-template-areas: 
-    "carousel "
-    "videos "
-}
-
-.navCarouselSlide{
-    grid-area: carousel ;
-}
-
-.navVideos{
-    grid-area: videos;
-}
+        background-color:  #212529; 
+        padding: 0%;
+        margin: 0%;
 
 
-/*  */
-.indice{
-   margin: 0%;
-   padding: 0.1%;
-   display:flex ;
-   flex-flow: row wrap;  
-   align-items: center;
-   font-size: 25px; 
-}
-
-.indiceLi{
-    margin-left: 1%;
-}
-
-li {
-    display: inline-block;
-    font-family: 'Anton', sans-serif;   
-    font-weight: bold;
-    letter-spacing: 2px;
+    /* Grid */
+    #pagina{
+        
+        display: grid;
+        grid-template-areas: 
+        "indice" 
+        "main"
+        "footer";
     
-    
-}
-
-li a{
-    text-decoration: none;
-    color:rgb(248, 125, 9);
-}
-
-.logo{ 
-    width: 120px;
-    height: auto;
-    border-radius: 12px;
-    margin: 0%;
-    padding: 0.1%;
-    
-}
-.logo{
-
-    height: 70px;
-    transition: height 2s;
-    
-}
-.logo:hover{
-   height: 150px;
-}
-.slider{
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 2px;
-}
-   
-
-
-.imgNoticia{
-    width: 20%;
-    height: auto;
-    border-radius: 12px;
-    margin: 0%;
-    padding: 0.1%;
-
-
-}
-
-.divImg{
-    display:contents;
-    width: auto;
-    height: auto;
-
-}
-
-.noticias{
-    
-    border-style: solid;
-    display: flex;
-    flex-flow: row nowrap ;
-   
-}
-
-
-.noticias2{
-    
-    border-style: solid;
-    display: flex;
-    flex-flow: row nowrap ;
-   
-}
-
-
-.textoNoticia{
- 
-    display: inline-block;
-
-}
-
-footer{
-    width:100%;
-    height:60px;   
-}
-
-.videos{
-    display: flex;
-    flex-flow: row nowrap ;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-}
-.videos iframe{
-    width: 50%;
-    
-}
-dt, dd{
-    color: grey;
-}
-
-.hamburguesa{
-    display: none;
-}
-
-
-@media (max-width:650px){
-
-    .divImg{
-        display: none;
     }
 
-    .textoNoticias{
-        font-size: 12px;
-    }
     .navIndice{
-        font-size: 12px;
+        grid-area: indice;
     }
+
+    .navMain{
+        grid-area: main;
+    }
+
+    .navFooter{
+        grid-area: footer;
+    }
+
+    #todoVideos{
+        display: grid;
+        grid-template-areas: 
+        "carousel "
+        "videos "
+    }
+
+    .navCarouselSlide{
+        grid-area: carousel ;
+    }
+
+    .navVideos{
+        grid-area: videos;
+    }
+
+
+    /*  */
+    #pagina{
+        background-color: #212529;
+    }
+    .indice{
+    margin: 0%;
+    padding: 0.1%;
+    display:flex ;
+    flex-flow: row wrap;  
+    align-items: center;
+    font-size: 25px; 
+    }
+
     .indiceLi{
-        display: flex;
-        font-size: 18px; 
-        letter-spacing: 3px;
+        margin-left: 1%;
+    }
+
+    li {
+        display: inline-block;
+        font-family: 'Anton', sans-serif;   
+        font-weight: bold;
+        letter-spacing: 2px;
+        
+        
+    }
+
+    li a{
+        text-decoration: none;
+        color:rgb(248, 125, 9);
+    }
+
+    .logo{ 
+        width: 120px;
+        height: auto;
+        border-radius: 12px;
+        margin: 0%;
+        padding: 0.1%;
+        
     }
     .logo{
-        width: 90px;
-        height: auto;
+
+        height: 70px;
+        transition: height 2s;
+        
     }
+    .logo:hover{
+    height: 150px;
+    }
+    .slider{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 2px;
+    }
+    
+
+
+    .imgNoticia{
+        width: 20%;
+        height: auto;
+        border-radius: 12px;
+        margin: 0%;
+        padding: 0.1%;
+
+
+    }
+
+    .divImg{
+        display:contents;
+        width: auto;
+        height: auto;
+
+    }
+
+    .noticias{
+        
+        border-style: solid;
+        display: flex;
+        flex-flow: row nowrap ;
+        border-radius: 12px;
+        color: white;
+    
+    }
+
+
+    .noticias2{
+        
+        border-style: solid;
+        display: flex;
+        flex-flow: row nowrap ;
+        border-radius: 12px;
+        color: white;
+    
+    }
+
+
+    .textoNoticia{
+    
+        display: inline-block;
+
+    }
+
+    footer{
+        width:100%;
+        height:60px;   
+    }
+
     .videos{
         display: flex;
-        flex-direction: column;
+        flex-flow: row nowrap ;
         width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .videos iframe{
+        width: 50%;
+        
+    }
+    dt, dd{
+        color: grey;
+    }
 
-    }
-    iframe{
-        width: 100%;
-    }
-    .navIndice{
+    .hamburguesa{
         display: none;
     }
-    .hamburguesa{
-        display: inline;
-        
+    #tabla{
+        background-color: #212529;
+        color:  white;
     }
-    .navbar-toggler-icon{
-        display: flex;
-        align-items: right;
-        
+    body{
+        background-color: #212529;;
     }
+    
 
-   
+
+    @media (max-width:650px){
+
+        .divImg{
+            display: none;
+        }
+
+        .textoNoticias{
+            font-size: 12px;
+        }
+        .navIndice{
+            font-size: 12px;
+        }
+        .indiceLi{
+            display: flex;
+            font-size: 18px; 
+            letter-spacing: 3px;
+        }
+        .logo{
+            width: 90px;
+            height: auto;
+        }
+        .videos{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+        iframe{
+            width: 100%;
+        }
+        .navIndice{
+            display: none;
+        }
+        .hamburguesa{
+            display: inline;
+            
+        }
+        .navbar-toggler-icon{
+            display: flex;
+            align-items: right;
+            
+        }
+        
+    
+    }
 }
