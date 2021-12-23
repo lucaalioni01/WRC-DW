@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
-    
         background-color:  #212529; 
         padding: 0%;
         margin: 0%;
@@ -14,36 +13,38 @@ body{
         "indice" 
         "main"
         "footer";
+            .navIndice{
+            grid-area: indice;
+            }
+
+            .navMain{
+            grid-area: main;
+            }
+
+            .navFooter{
+            grid-area: footer;
+        }
+    }
+
     
-    }
-
-    .navIndice{
-        grid-area: indice;
-    }
-
-    .navMain{
-        grid-area: main;
-    }
-
-    .navFooter{
-        grid-area: footer;
-    }
 
     #todoVideos{
         display: grid;
         grid-template-areas: 
         "carousel "
-        "videos "
+        "videos ";
+            .navCarouselSlide{
+            grid-area: carousel ;   
+            .navVideos{
+            grid-area: videos;
+        }
+
     }
 
-    .navCarouselSlide{
-        grid-area: carousel ;
+ 
     }
 
-    .navVideos{
-        grid-area: videos;
-    }
-
+    
 
     /*  */
     #pagina{
@@ -181,7 +182,7 @@ body{
     
 
 
-    @media (max-width:650px){
+    @media (max-width:650px) {
 
         .divImg{
             display: none;
@@ -189,10 +190,11 @@ body{
 
         .textoNoticias{
             font-size: 12px;
+                    & .navIndice{
+                        font-size: 12px;
+            }
         }
-        .navIndice{
-            font-size: 12px;
-        }
+      
         .indiceLi{
             display: flex;
             font-size: 18px; 
@@ -227,3 +229,5 @@ body{
     
     }
 }
+$colorFondo:#212529;
+$colorLetrasNav: rgb(248, 125, 9);
