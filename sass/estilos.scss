@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body{
-        background-color:  #212529; 
-        padding: 0%;
-        margin: 0%;
+    background-color:  #212529; 
+    padding: 0%;
+    margin: 0%;
 
 
     /* Grid */
@@ -26,7 +26,6 @@ body{
         }
     }
 
-    
 
     #todoVideos{
         display: grid;
@@ -154,15 +153,17 @@ body{
         height:60px;   
     }
 
-    .videos{
-        display: flex;
+    .videoscontainer{
+        display: inline-flex;
         flex-flow: row nowrap ;
         width: 100%;
         padding: 0%;
         margin: 0%;
+       
     }
-    .videos iframe{
-        width: 50%;
+    .videoscontainer iframe{
+        width: 100%;
+      
         
     }
     dt, dd{
@@ -176,11 +177,7 @@ body{
         background-color: #212529;
         color:  white;
     }
-    body{
-        background-color: #212529;;
-    }
-    
-
+   
 
     @media (max-width:650px) {
 
@@ -229,5 +226,6 @@ body{
     
     }
 }
+
 $colorFondo:#212529;
 $colorLetrasNav: rgb(248, 125, 9);

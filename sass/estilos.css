@@ -13,19 +13,19 @@ body #pagina {
       grid-template-areas: "indice"  "main" "footer";
 }
 
-body .navIndice {
+body #pagina .navIndice {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: indice;
 }
 
-body .navMain {
+body #pagina .navMain {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
-body .navFooter {
+body #pagina .navFooter {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
@@ -37,13 +37,13 @@ body #todoVideos {
       grid-template-areas: "carousel " "videos ";
 }
 
-body .navCarouselSlide {
+body #todoVideos .navCarouselSlide {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: carousel;
 }
 
-body .navVideos {
+body #todoVideos .navCarouselSlide .navVideos {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: videos;
@@ -190,10 +190,6 @@ body #tabla {
   color: white;
 }
 
-body body {
-  background-color: #212529;
-}
-
 @media (max-width: 650px) {
   body .divImg {
     display: none;
@@ -201,7 +197,7 @@ body body {
   body .textoNoticias {
     font-size: 12px;
   }
-  body .navIndice {
+  body .textoNoticias .navIndice {
     font-size: 12px;
   }
   body .indiceLi {
