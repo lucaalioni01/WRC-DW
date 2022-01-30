@@ -170,13 +170,15 @@ body{
         flex-flow: row nowrap ;
         width: 100%;
         padding: 0%;
-        margin: 0%; 
+        margin: 2px;
+        margin-bottom: 100px;
+      
     }
+
     .videoscontainer iframe{
         width: 100%;
-      
-        
     }
+
     dt, dd{
         color: grey;
     }
@@ -184,6 +186,7 @@ body{
     .hamburguesa{
         display: none;
     }
+
     #tabla{
         background-color: #212529;
         color:  white;
@@ -191,7 +194,7 @@ body{
         padding: 0%;
        
     }
-    
+  
   
     @media (max-width:650px) {
 
