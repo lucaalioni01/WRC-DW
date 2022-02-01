@@ -29,7 +29,7 @@ body{
 
    
     #todoVideos{
-        width: 100%;
+        width: 70%;
         height: 30%;
         display: grid;
         grid-template-areas: 
@@ -71,10 +71,12 @@ body{
         
     }
 
-    li a{
+    li a {
         text-decoration: none;
         color:rgb(248, 125, 9);
     }
+
+   
 
     .logo{ 
         width: 120px;
@@ -91,7 +93,7 @@ body{
         
     }
     .logo:hover{
-    height: 150px;
+        height: 150px;
     }
     .slider{
         width: 50%;
@@ -170,13 +172,15 @@ body{
         flex-flow: row nowrap ;
         width: 100%;
         padding: 0%;
-        margin: 2px;
+        margin: px;
         margin-bottom: 100px;
-      
+
+        
     }
 
     .videoscontainer iframe{
-        width: 100%;
+        width: 90%;
+        
     }
 
     dt, dd{
